@@ -6,7 +6,7 @@ class Header extends Component {
       <header>
         <h1>Sistema Solar</h1>
       </header>
-    )
+    );
   }
 }
 
