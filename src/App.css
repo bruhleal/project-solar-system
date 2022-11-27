@@ -1,3 +1,177 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: Epilogue;
+  font-weight: 100 1000;
+  src: url('./components/fonts/Epilogue-VariableFont_wght.ttf');
 }
+
+* {
+  box-sizing: border-box;
+  color: white;
+  font-family: Epilogue , sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Image background */
+body {
+  background-image: url("images/background.png");
+}
+
+h2 {
+  color: white;
+  font-weight: 260;
+  text-transform: uppercase;
+}
+
+/* Title Solar System */
+h1 {
+  font-weight: 150;
+  text-transform: uppercase;
+  width: 451.85px;
+}
+
+.elipse {
+  border: 1px solid white;
+  border-radius: 100%;
+  height: 307.45px;
+  position: absolute;
+  transform: rotate(59deg);
+  width: 120.07px;
+}
+
+.cabecalho {
+  align-items: center;
+  display: flex;
+  height: 250px;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  width: fit-content;
+}
+
+/* Box Missions List */
+.missions {
+  background-color: rgb(255, 255, 255, 0.1);
+  border-radius: 30px;
+  box-shadow: 4px 14px rgba(0, 0, 0, 0.9);
+  left: 91px;
+  margin: 100px auto;
+  max-width: 1098px;
+  padding: 3.125rem;
+  text-align: center;
+  width: fit-content;
+}
+
+.missions h2 {
+  font-size: 22.5pt;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+}
+
+.missions .boxMissions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+}
+
+.missionCard {
+  background-color: rgba(24, 26, 37, 0.5);
+  border: 1px solid white;
+  border-radius: 10px;
+  height: 11.875rem;
+  width: 29.25rem;
+}
+
+.missionCard .nome {
+  align-items: center;
+  border-bottom: 1px solid white;
+  display: flex;
+  font-size: 17pt;
+  font-weight: 300;
+  height: 50%;
+  padding-left: 1.688rem;
+}
+
+.missionCard .info {
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  font-weight: 400;
+  height: 50%;
+  padding-left: 1.688rem;
+  padding-right: 3.375rem;
+  text-align: start;
+}
+
+.missionCard .info p {
+  font-size: 16px;
+}
+
+.missionCard .info img {
+  height: 18px;
+  margin-right: 8px;
+  padding-bottom: 1px;
+}
+
+.missionCard .info .anoPais {
+  align-items: center;
+  display: flex;
+  margin-right: auto;
+}
+
+.missionCard .info .ano {
+  margin-right: 30px;
+}
+
+.missionCard .info .destino {
+  align-items: center;
+  display: flex;
+}
+
+.missionCard .info .destin {
+  width: min-content;
+}
+
+/* planets */
+.solarSystem {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.solarSystem:after {
+  background-color: white;
+  content: '';
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  z-index: 0;
+}
+
+/* planets */
+.solarSystem ul {
+  display: flex;
+  list-style: none;
+}
+
+/* centraliza nome dos planetas */
+.solarSystem ul div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.teste:hover {
+  transform: scale(1.2);
+  transition: 1s;
+}
+

@@ -5,14 +5,14 @@ import planets from '../data/planets';
 
 class SolarSystem extends Component {
   render() {
-    const allPlanets = planets.map(({ name, image }) => (
+    const allPlanets = planets.map(({ name, image, width }) => (
       <PlanetCard
         key={ name }
         planetName={ name }
-        planetImage={ image }
+        planetImage={ { image, width } }
       />));
     return (
-      <div data-testid="solar-system">
+      <div className="solarSystem" data-testid="solar-system">
         <Title headline="Planetas" />
         <ul>
           {allPlanets}

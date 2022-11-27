@@ -14,9 +14,9 @@ class Missions extends Component {
         destination={ destination }
       />));
     return (
-      <div data-testid="missions">
+      <div className="missions" data-testid="missions">
         <Title headline="Missões" />
-        <ul>
+        <ul className="boxMissions">
           {allMissionsCard}
         </ul>
       </div>
