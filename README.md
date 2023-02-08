@@ -11,3 +11,5 @@ Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua cr
 - quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
 - quais arquivos/pastas foram desenvolvidos pela Trybe.
 -->
+
+O Projeto Solar System foi desenvolvido individualmente por mim enquanto estudante da Trybe. Nessa aplicação utilizei a biblioteca React.js com o objetivo de por em prática os meus conhecimentos sobre a criação de componentes de classe, a forma correta de utilizar props, e ainda utilizar o PropTypes para validar as props. 
